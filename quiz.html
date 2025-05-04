@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuis Hoax ESD</title>
+  <link rel="stylesheet" href="style/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">Hoax ESD</div>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="burger">&#9776;</label>
+    <ul class="nav-menu">
+      <li><a href="index.html">Beranda</a></li>
+    </ul>
+  </nav>
+
+  <section class="quiz-container">
+    <div id="start-screen">
+      <h2>Siap untuk kuis?</h2>
+      <button onclick="startQuiz()" class="btn">Mulai</button>
+    </div>
+
+    <form id="quiz-form" class="hidden">
+      <div class="question">
+        <p>1. Sebuah laporan perusahaan menyatakan telah mengurangi emisi karbon hingga 50% dalam setahun terakhir. Namun, data pendukung yang disajikan tidak transparan dan metodologi perhitungannya tidak dijelaskan secara detail. Ciri-ciri potensi "greenwashing" (hoax lingkungan) dalam laporan ini adalah:</p>
+        <label><input type="radio" name="q1" value="0"> Penurunan emisi yang signifikan dalam waktu singkat.</label>
+        <label><input type="radio" name="q1" value="0"> Penggunaan grafik yang menarik secara visual.</label>
+        <label><input type="radio" name="q1" value="1"> Kurangnya transparansi data dan metodologi yang tidak jelas.</label>
+        <label><input type="radio" name="q1" value="0"> Pernyataan yang berfokus pada satu aspek lingkungan saja.</label>
+      </div>
+      
+      <div class="question">
+        <p>2. Sebuah unggahan media sosial viral mengklaim bahwa sebuah perusahaan perkebunan kelapa sawit telah menghancurkan hutan primer yang luas dan menyebabkan punahnya spesies orangutan. Namun, klaim ini tidak didukung oleh laporan dari organisasi lingkungan terpercaya atau citra satelit independen. Indikator potensi hoax sosial dan lingkungan dalam kasus ini adalah:</p>
+        <label><input type="radio" name="q2" value="0"> Unggahan viral dengan banyak komentar negatif.</label>
+        <label><input type="radio" name="q2" value="1"> Tidak adanya verifikasi dari sumber kredibel dan bukti visual independen.</label>
+        <label><input type="radio" name="q2" value="0"> Adanya nama perusahaan perkebunan yang disebutkan.</label>
+        <label><input type="radio" name="q2" value="0"> Klaim tentang dampak negatif terhadap satwa liar.</label>
+      </div>
+      
+      <div class="question">
+        <p>3. Sebuah perusahaan teknologi mengumumkan program tanggung jawab sosial (CSR) yang ambisius, menjanjikan donasi besar untuk pendidikan anak-anak kurang mampu. Namun, laporan pelaksanaan program tersebut minim dan tidak ada informasi mengenai mitra organisasi atau penerima manfaat yang jelas. Potensi "social washing" (hoax sosial) di sini ditandai dengan:</p>
+        <label><input type="radio" name="q3" value="0"> Pengumuman program CSR yang besar dan menarik perhatian.</label>
+        <label><input type="radio" name="q3" value="0"> Fokus pada isu sosial yang populer.</label>
+        <label><input type="radio" name="q3" value="1"> Kurangnya rincian pelaksanaan dan akuntabilitas program.</label>
+        <label><input type="radio" name="q3" value="0"> Adanya foto-foto kegiatan CSR yang bersifat seremonial.</label>
+      </div>
+      
+      <div class="question">
+        <p>4. Sebuah laporan keberlanjutan perusahaan pertambangan menonjolkan inisiatif penanaman kembali lahan bekas tambang. Namun, inspeksi lapangan menunjukkan bahwa area yang ditanami sangat kecil dibandingkan dengan area yang dieksploitasi, dan jenis tanaman yang digunakan bukan spesies endemik yang sesuai. Ini mengindikasikan potensi:</p>
+        <label><input type="radio" name="q4" value="0"> Transparansi penuh dalam pelaporan lingkungan.</label>
+        <label><input type="radio" name="q4" value="0"> Komitmen nyata terhadap restorasi lingkungan.</label>
+        <label><input type="radio" name="q4" value="1"> "Greenwashing" melalui penekanan berlebihan pada tindakan kecil.</label>
+        <label><input type="radio" name="q4" value="0"> Keterlibatan aktif masyarakat lokal dalam rehabilitasi.</label>
+      </div>
+      
+      <div class="question">
+        <p>5. Sebuah perusahaan pakaian mengklaim menggunakan "100% katun organik" dalam semua produknya. Namun, label produk tidak mencantumkan sertifikasi organik yang diakui secara internasional, dan audit independen tidak pernah dipublikasikan. Hal ini menimbulkan kecurigaan terhadap:</p>
+        <label><input type="radio" name="q5" value="0"> Praktik bisnis yang etis dan bertanggung jawab.</label>
+        <label><input type="radio" name="q5" value="0"> Investasi pada bahan baku yang berkelanjutan.</label>
+        <label><input type="radio" name="q5" value="1"> Kemungkinan klaim palsu atau tidak terverifikasi.</label>
+        <label><input type="radio" name="q5" value="0"> Responsibilitas terhadap konsumen yang peduli lingkungan.</label>
+      </div>
+      
+      <div class="question">
+        <p>6. Sebuah laporan tata kelola perusahaan memuji keragaman anggota dewan direksi. Namun, setelah diteliti lebih lanjut, sebagian besar anggota dewan memiliki latar belakang dan pandangan yang serupa, dan representasi kelompok minoritas sangat minim. Ini adalah contoh potensi hoax dalam aspek:</p>
+        <label><input type="radio" name="q6" value="0"> Keterbukaan informasi perusahaan.</label>
+        <label><input type="radio" name="q6" value="0"> Implementasi prinsip tata kelola yang baik.</label>
+        <label><input type="radio" name="q6" value="1"> Keragaman dan inklusi yang sesungguhnya.</label>
+        <label><input type="radio" name="q6" value="0"> Kepatuhan terhadap peraturan perundang-undangan.</label>
+      </div>
+      
+      <div class="question">
+        <p>7. Sebuah perusahaan energi mengiklankan diri sebagai pelopor energi bersih karena investasi dalam proyek energi terbarukan. Namun, proporsi investasi ini sangat kecil dibandingkan dengan investasi mereka dalam bahan bakar fosil. Ini merupakan taktik "greenwashing" melalui:</p>
+        <label><input type="radio" name="q7" value="0"> Diversifikasi portofolio energi.</label>
+        <label><input type="radio" name="q7" value="0"> Fokus pada solusi energi masa depan.</label>
+        <label><input type="radio" name="q7" value="1"> Penyajian informasi yang menyesatkan tentang skala investasi.</label>
+        <label><input type="radio" name="q7" value="0"> Komitmen terhadap transisi energi yang bertahap.</label>
+      </div>
+      
+      <div class="question">
+        <p>8. Sebuah organisasi non-pemerintah (NGO) merilis laporan yang menuduh sebuah perusahaan melanggar hak asasi pekerja secara sistematis. Namun, metodologi penelitian laporan tersebut tidak jelas, sumber informasinya anonim, dan perusahaan tidak diberi kesempatan untuk memberikan tanggapan. Kredibilitas laporan ini dipertanyakan karena:</p>
+        <label><input type="radio" name="q8" value="0"> Keterlibatan NGO dalam isu hak asasi manusia.</label>
+        <label><input type="radio" name="q8" value="1"> Potensi bias dan kurangnya transparansi metodologi.</label>
+        <label><input type="radio" name="q8" value="0"> Adanya tuduhan pelanggaran yang serius.</label>
+        <label><input type="radio" name="q8" value="0"> Keberanian NGO dalam mengkritisi perusahaan besar.</label>
+      </div>
+      
+      <div class="question">
+        <p>9. Sebuah perusahaan kosmetik meluncurkan kampanye pemasaran yang menonjolkan penggunaan bahan-bahan alami dan ramah lingkungan. Namun, daftar komposisi produk menunjukkan adanya kandungan bahan kimia sintetis yang signifikan dan kemasan produk tidak dapat didaur ulang. Ini adalah contoh:</p>
+        <label><input type="radio" name="q9" value="0"> Komitmen terhadap produk yang berkelanjutan.</label>
+        <label><input type="radio" name="q9" value="0"> Upaya untuk menarik konsumen yang peduli lingkungan.</label>
+        <label><input type="radio" name="q9" value="1"> Ketidaksesuaian antara klaim pemasaran dan praktik sebenarnya.</label>
+        <label><input type="radio" name="q9" value="0"> Inovasi dalam formulasi produk alami.</label>
+      </div>
+      
+      <div class="question">
+        <p>10. Sebuah perusahaan konstruksi melaporkan tingkat kecelakaan kerja yang sangat rendah. Namun, investigasi independen mengungkapkan adanya praktik pelaporan yang tidak akurat dan intimidasi terhadap pekerja yang melaporkan insiden. Ini adalah indikasi masalah dalam aspek:</p>
+        <label><input type="radio" name="q10" value="0"> Kepatuhan terhadap standar keselamatan kerja.</label>
+        <label><input type="radio" name="q10" value="1"> Transparansi dan akuntabilitas dalam pelaporan K3 (Kesehatan dan Keselamatan Kerja).</label>
+        <label><input type="radio" name="q10" value="0"> Komitmen perusahaan terhadap kesejahteraan pekerja.</label>
+        <label><input type="radio" name="q10" value="0"> Efektivitas sistem manajemen keselamatan.</label>
+      </div>      
+
+      <div class="submit-area">
+        <button type="button" onclick="submitQuiz()" class="btn">Kirim Jawaban</button>
+      </div>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>Skor Kamu:</h2>
+      <h4 id="score-text"></h4>
+      <a href="index.html" class="margin-top: 40px; padding: 10px 20px; background-color: #0077b6;
+      ; color: white; border: none;">Selesai dan Kembali ke Beranda</a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  h5 {
+    font-size: 17px;
+    font-weight: normal;
+  }
+
+  h6 {
+    font-size: 14px;
+    font-weight: normal;
+  } 
+
+  h7 {
+    font-size: 18px;
+  } 
+
+  .quiz-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  body {
+    background-color: #85d2e1;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    background-color: #005f73;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .nav-brand {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .burger {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: background 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    background-color: #0a9396;
+    border-radius: 5px;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .burger {
+      display: block;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      position: absolute;
+      right: 0;
+      top: 60px;
+      background-color: #005f73;
+      width: 200px;
+      display: none;
+    }
+  
+    #menu-toggle:checked + .burger + .nav-menu {
+      display: flex;
+    }
+  }
+  
+  /* Sections */
+  .hero {
+    padding: 60px 20px;
+    text-align: center;
+    background-color:  #85d2e1;
+    color: #004346;
+    scroll-margin-top: 50px; 
+  }
+  
+  .edukasi {
+    padding: 40px 20px;
+    background-color: #e9ecef;
+  }
+  
+  .edukasi h2, .edukasi h3 {
+    color: #0077b6;
+    margin-bottom: 10px;
+  }
+  
+  .edukasi ul {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+  
+  .start-quiz {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* atau center jika ingin tombol di tengah */
+  }
+  
+  .btn {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 30px; 
+    margin-bottom: 40px;
+  }
+  
+  .btn:hover {
+    background-color: #023e8a;
+  }
+  
+  /* Quiz Page */
+  .quiz-container {
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .question {
+    margin-bottom: 30px;
+  }
+  
+  .question p {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .hidden {
+    display: none;
+    align-items: center;
+    margin: 100px;  
+  }
+  
+
+  .submit-area {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #result {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  #edukasi {
+    scroll-margin-top: 40px; /* sesuaikan dengan tinggi navbar */
+  }
+  
+  
